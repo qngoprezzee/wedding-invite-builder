@@ -26,13 +26,11 @@ export async function GET() {
 
   let html = template;
 
-  // Replace text placeholders
   for (const [key, placeholder] of TEXT_REPLACEMENTS) {
     const value = config[key] as string;
     html = html.split(placeholder).join(value);
   }
 
-  // Replace photo paths
   for (const [templatePath, url] of Object.entries(config.photos)) {
     html = html.split(templatePath).join(url);
   }

@@ -173,7 +173,7 @@ export default function AdminPage() {
       <main className="flex-1 flex flex-col">
         <div className="px-4 py-3 bg-white border-b border-gray-200 flex items-center gap-3">
           <div className="flex-1 px-3 py-1.5 bg-gray-100 rounded text-xs text-gray-500 font-mono">
-            {typeof window !== "undefined" ? `${window.location.origin}/invite` : "/invite"}
+            {typeof window !== "undefined" ? window.location.origin : "/"}
           </div>
           <button
             onClick={() => iframeRef.current?.contentWindow?.location.reload()}
@@ -185,7 +185,7 @@ export default function AdminPage() {
         <div className="flex-1 overflow-hidden bg-gray-300">
           <iframe
             ref={iframeRef}
-            src="/invite"
+            src="/"
             className="w-full h-full border-0"
             title="Wedding Invitation Preview"
           />
