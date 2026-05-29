@@ -1,6 +1,6 @@
 # Wedding Invite App
 
-A Next.js wedding invitation app with a live admin builder. Edit text and photos via `/admin`, and share `/invite` with guests.
+A Next.js wedding invitation app with a live admin builder. Edit text and photos via `/admin`, and share the root URL with guests.
 
 ## Local Development
 
@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). The root `/` redirects to `/invite`.
+Open [http://localhost:3000](http://localhost:3000) to see the invite. Admin is at [http://localhost:3000/admin](http://localhost:3000/admin).
 
 In local development, wedding config is read from and saved to `config.json` in the project root. Uploaded photos are stored on the filesystem at `public/images/`.
 
@@ -38,7 +38,7 @@ You can edit `config.json` directly, or use the admin UI at `/admin`.
 
 - Edit all text fields in the left panel and click **Lưu** to save.
 - Click any photo thumbnail to replace it with a local file upload.
-- The right panel shows a live preview of the invite at `/invite`.
+- The right panel shows a live preview of the invite.
 
 ## Deploying to Vercel
 
