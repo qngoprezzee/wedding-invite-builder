@@ -100,7 +100,7 @@ export default function AdminPage() {
           </div>
           <div className="flex gap-2">
             <a
-              href="/invite"
+              href="/"
               target="_blank"
               className="px-3 py-1.5 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 text-gray-700"
             >
